@@ -1,4 +1,5 @@
-var host = 'a.com'; // the domain or IP where the node server and kurento media server are running
+var host = 'live.raidcdn.com'; // the domain or IP where the node server and kurento media server are running
+
 
 function deviceReady() {
   return new Promise(function(resolve, reject) {
@@ -27,7 +28,7 @@ deviceReady().then(function() {
 
 function stuff() {
 
-  var ws = new WebSocket('ws://'+host+':8080/one2many');
+  var ws = new WebSocket('wss://'+host+':443/one2many');
   var video;
   var webRtcPeer;
 
