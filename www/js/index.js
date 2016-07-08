@@ -1,4 +1,4 @@
-var host = 'a.com'; // the domain or IP where the node server and kurento media server are running
+var host = 'live.raidcdn.com'; // the domain or IP where the node server and kurento media server are running
 
 function deviceReady() {
   return new Promise(function(resolve, reject) {
